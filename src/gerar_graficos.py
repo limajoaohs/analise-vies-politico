@@ -16,8 +16,8 @@ width = 0.15
 
 fig, ax = plt.subplots(figsize=(11, 6))
 rects1 = ax.bar(x - 2 * width, baseline_acc, width, label='TF-IDF + LogReg (Baseline)', color='#1f77b4')
-rects2 = ax.bar(x - 1 * width, bow_acc, width, label='BoW + Naive Bayes (Sua Amiga)', color='#9467bd')
-rects3 = ax.bar(x, mlp_acc, width, label='BoW + MLP / Rede Densa (Você)', color='#ff7f0e')
+rects2 = ax.bar(x - 1 * width, bow_acc, width, label='BoW + Naive Bayes', color='#9467bd')
+rects3 = ax.bar(x, mlp_acc, width, label='BoW + MLP / Rede Densa', color='#ff7f0e')
 rects4 = ax.bar(x + 1 * width, bilstm_acc, width, label='Bi-LSTM (Deep Learning)', color='#2ca02c')
 rects5 = ax.bar(x + 2 * width, bertimbau_acc, width, label='BERTimbau (Transformer)', color='#d62728')
 
