@@ -15,12 +15,12 @@ width = 0.18
 
 fig, ax = plt.subplots(figsize=(10, 6))
 rects1 = ax.bar(x - 1.5 * width, baseline_acc, width, label='TF-IDF + LogReg (Baseline)', color='#1f77b4')
-rects2 = ax.bar(x - 0.5 * width, bow_acc, width, label='BoW + Naive Bayes', color='#9467bd')
+rects2 = ax.bar(x - 0.5 * width, bow_acc, width, label='BOW + MLP', color='#9467bd')
 rects3 = ax.bar(x + 0.5 * width, bilstm_acc, width, label='Bi-LSTM (Deep Learning)', color='#2ca02c')
 rects4 = ax.bar(x + 1.5 * width, bertimbau_acc, width, label='BERTimbau (Transformer)', color='#d62728')
 
 ax.set_ylabel('Acurácia')
-ax.set_title('Comparação de Desempenho de PLN: Baseline, BoW, Bi-LSTM e BERTimbau')
+ax.set_title('Comparação de Desempenho de PLN: Baseline, BOW + MLP, Bi-LSTM e BERTimbau')
 ax.set_xticks(x)
 ax.set_xticklabels(datasets)
 ax.set_ylim(0, 1.10)
