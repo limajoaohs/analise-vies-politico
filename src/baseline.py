@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
     if os.path.exists(caminho_inter):
         processar_dataset(caminho_inter, caminho_inter_limpo, idioma='english')
-        treinar_e_avaliar_baseline(caminho_inter_limpo, nome_base='Base Internacional (10k)')
+        treinar_e_avaliar_baseline(caminho_inter_limpo, nome_base='Base Internacional (1.774 registros)')
 
     caminho_br = 'data/dataset_brasil.csv'
     caminho_br_limpo = 'data/dataset_brasil_limpo.csv'

@@ -7,7 +7,6 @@ from nltk.corpus import stopwords
 
 nltk.download('stopwords', quiet=True)
 
-
 def limpar_texto(texto, idioma='portuguese'):
     if not isinstance(texto, str):
         return ''
@@ -29,7 +28,6 @@ def limpar_texto(texto, idioma='portuguese'):
 
     return re.sub(r'\s+', ' ', texto).strip()
 
-
 def processar_dataset(caminho_entrada, caminho_saida, idioma='portuguese'):
     if not os.path.exists(caminho_entrada):
         print(f'Arquivo não encontrado: {caminho_entrada}')
@@ -45,11 +43,3 @@ def processar_dataset(caminho_entrada, caminho_saida, idioma='portuguese'):
     df['texto_limpo'] = df['texto'].apply(lambda x: limpar_texto(x, idioma))
     df.to_csv(caminho_saida, index=False, encoding='utf-8')
     print(f'Salvo com sucesso em: {caminho_saida}\n')
-
-
-if __name__ == '__main__':
-    processar_dataset(
-        caminho_entrada='data/dataset_internacional.csv',
-        caminho_saida='data/dataset_internacional_limpo.csv',
-        idioma='english',
-    )

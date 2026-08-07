@@ -5,10 +5,11 @@ import os
 os.makedirs('results', exist_ok=True)
 
 datasets = ['Internacional (1.774)', 'Brasil (300)']
+
 baseline_acc = [0.93, 0.87]
-bow_acc = [0.86, 0.82]
-bilstm_acc = [0.85, 0.67]
-bertimbau_acc = [0.95, 0.90]
+bow_acc = [0.92, 0.87] 
+bilstm_acc = [0.86, 0.63]
+bertimbau_acc = [0.00, 0.83]
 
 x = np.arange(len(datasets))
 width = 0.18

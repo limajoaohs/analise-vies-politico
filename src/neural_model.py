@@ -175,10 +175,10 @@ if __name__ == '__main__':
     caminho_inter_limpo = 'data/dataset_internacional_limpo.csv'
 
     if os.path.exists(caminho_inter):
-        print('\n[1/2] Higienizando base internacional (10k dados)...')
+        print('\n[1/2] Higienizando base internacional (1.774 dados)...')
         processar_dataset(caminho_inter, caminho_inter_limpo, idioma='english')
         treinar_e_avaliar_neural(
-            caminho_inter_limpo, nome_base='Base Internacional Político (10k)'
+            caminho_inter_limpo, nome_base='Base Internacional Político (1.774 registros)'
         )
     else:
         print(
