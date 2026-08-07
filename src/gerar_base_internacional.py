@@ -4,7 +4,7 @@ from sklearn.datasets import fetch_20newsgroups
 
 
 def gerar_base_politica_internacional():
-    print("Gerando Dataset Internacional Político (20Newsgroups Politics - 1.774 registros)...")
+    print("TESTE - Gerando Dataset Internacional Político (20Newsgroups Politics - 1.774 registros)...")
 
     categorias_politicas = [
         "talk.politics.guns",
